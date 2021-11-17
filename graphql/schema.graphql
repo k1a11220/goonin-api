@@ -1,0 +1,22 @@
+type Benefit {
+  id: Int!
+  name: String!
+  category: String!
+  description: String!
+  location: String!
+  address: String!
+  summary: String!
+  thumbnail: String!
+  mainBenefit: String!
+  benefits: [String!]
+  conditions: [String!]
+  othersOpts: [String!]
+  dtlImgs: [String!]
+  dtlLink: String!
+  contactNb: String!
+  period: String!
+}
+
+type Query {
+  benefits: [Benefit]!
+}
