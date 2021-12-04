@@ -17,7 +17,7 @@ type Benefit {
 }
 
 type Query {
-  benefits(category: String): [Benefit]!
+  benefits: [Benefit]!
   getById(id: Int!): Benefit
   getByCategory(category: String!): [Benefit]!
 }
