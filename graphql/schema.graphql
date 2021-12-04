@@ -2,7 +2,6 @@ type Benefit {
   id: Int!
   name: String!
   category: String!
-  description: String!
   location: String!
   address: String!
   summary: String!
@@ -18,7 +17,14 @@ type Benefit {
 }
 
 type Query {
-  benefits: [Benefit]!
+  benefits(category: String): [Benefit]!
   getById(id: Int!): Benefit
-  getByCategory(category: String!): Benefit
+  getByCategory(category: String!): [Benefit]!
+}
+
+query getCategoy {
+  benefits(category: "문화") {
+    id
+    name
+  }
 }
