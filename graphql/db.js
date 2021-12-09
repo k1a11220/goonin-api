@@ -4,14 +4,14 @@ const benefitList = [
     name: "롯데시네마", //업체 이름
     category: "문화", //카테고리
     location: "전국", //지역
-    address: "", //주소
-    summary: "", //상세페이지 소개 멘트
+    address: "전국 모든 극장", //주소
+    summary: ["롯데시네마에서 최대", "4,000원", "할인해드려요"], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
     mainBenefit: "2D영화 최대 5천원 할인", //혜택 요약
     benefits: [
-      "일반 2D 영화 주중 7천원, 주말 8천원(동반3인)",
+      "2D 영화 주중 7천원, 주말 8천원(동반3인)",
       "3D 영화 주중 8천원, 주말 9천원(동반3인)",
-      "매점 콤보세트 2천원 할인(더블콤보 4천원 할인)",
+      "콤보세트 2천원 할인(더블콤보 4천원 할인)",
     ], //상세 혜택
     conditions: ["휴가증 지참 필수"], //혜택 조건
     otherOpts: [
@@ -30,7 +30,7 @@ const benefitList = [
     category: "문화", //카테고리
     location: "전국", //지역
     address: "", //주소
-    summary: "", //상세페이지 소개 멘트
+    summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
     mainBenefit: "2D영화 최대 6천원 할인", //혜택 요약
     benefits: ["2D : 7,000원 / 3D : 8,000원", "더블콤보 5000원 할인"], //상세 혜택
@@ -50,7 +50,7 @@ const benefitList = [
     category: "음식", //카테고리
     location: "전국", //지역
     address: "", //주소
-    summary: "", //상세페이지 소개 멘트
+    summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
     mainBenefit: "주문금액 10만원 한도 내 25% 할인", //혜택 요약
     benefits: [
@@ -75,7 +75,7 @@ const benefitList = [
     category: "여행", //카테고리
     location: "", //지역
     address: "", //주소
-    summary: "", //상세페이지 소개 멘트
+    summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
     mainBenefit: "본인 무료이용", //혜택 요약
     benefits: ["본인 무료이용"], //상세 혜택
@@ -96,7 +96,7 @@ const benefitList = [
     category: "여행", //카테고리
     location: "", //지역
     address: "", //주소
-    summary: "", //상세페이지 소개 멘트
+    summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
     mainBenefit: "50% 할인", //혜택 요약
     benefits: ["1인당 1일권 3만원", "야간권 2만원 대(24,500원)"], //상세 혜택
@@ -113,7 +113,7 @@ const benefitList = [
     category: "", //카테고리
     location: "", //지역
     address: "", //주소
-    summary: "", //상세페이지 소개 멘트
+    summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
     mainBenefit: "", //혜택 요약
     benefits: [""], //상세 혜택
@@ -130,7 +130,7 @@ const benefitList = [
     category: "", //카테고리
     location: "", //지역
     address: "", //주소
-    summary: "", //상세페이지 소개 멘트
+    summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
     mainBenefit: "", //혜택 요약
     benefits: [""], //상세 혜택
@@ -147,7 +147,7 @@ const benefitList = [
     category: "", //카테고리
     location: "", //지역
     address: "", //주소
-    summary: "", //상세페이지 소개 멘트
+    summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
     mainBenefit: "", //혜택 요약
     benefits: [""], //상세 혜택
@@ -164,7 +164,7 @@ const benefitList = [
     category: "", //카테고리
     location: "", //지역
     address: "", //주소
-    summary: "", //상세페이지 소개 멘트
+    summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
     mainBenefit: "", //혜택 요약
     benefits: [""], //상세 혜택
@@ -181,7 +181,7 @@ const benefitList = [
     category: "", //카테고리
     location: "", //지역
     address: "", //주소
-    summary: "", //상세페이지 소개 멘트
+    summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
     mainBenefit: "", //혜택 요약
     benefits: [""], //상세 혜택
@@ -198,7 +198,7 @@ const benefitList = [
     category: "",
     location: "",
     address: "",
-    summary: "",
+    summary: [""],
     thumbnail: "",
     mainBenefit: "",
     benefits: [""],
