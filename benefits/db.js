@@ -1,13 +1,5 @@
 /*
 
-category 숫자 의미 
-
-culture : 문화
-food : 음식
-activity : 여행 & 액티비티 
-
-category?=culture
-
 */
 
 const benefitList = [
