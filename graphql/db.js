@@ -1,12 +1,24 @@
+/*
+
+category 숫자 의미 
+
+culture : 문화
+food : 음식
+activity : 여행 & 액티비티 
+
+category?=culture
+
+*/
+
 const benefitList = [
   {
     id: 0, // 서비스 아이디
     name: "롯데시네마", //업체 이름
-    category: "문화", //카테고리
+    category: "culture", //카테고리
     location: "전국", //지역
     address: "전국 모든 극장", //주소
     summary: ["롯데시네마에서 최대", "4,000원", "할인해드려요"], //상세페이지 소개 멘트
-    thumbnail: "", //카드 썸네일
+    thumbnail: "https://i.imgur.com/LJfzOF5.png", //카드 썸네일
     mainBenefit: "2D영화 최대 5천원 할인", //혜택 요약
     benefits: [
       "2D 영화 주중 7천원, 주말 8천원(동반3인)",
@@ -19,7 +31,10 @@ const benefitList = [
       "기타 할인과 중복 불가",
       "일부 영화관 매점 혜택 상이.",
     ], //기타 주의사항
-    dtlImgs: [""], //상세페이지 이미지
+    dtlImgs: [
+      "https://i.imgur.com/LJfzOF5.png",
+      "https://i.imgur.com/LJfzOF5.png",
+    ], //상세페이지 이미지
     dtlLink: "", //혜택 상세 링크 (이메일 포함)
     contactNb: "", //연락처
     period: "2021-12-31", //행사기간
@@ -27,7 +42,7 @@ const benefitList = [
   {
     id: 1, // 서비스 아이디
     name: "CGV", //업체 이름
-    category: "문화", //카테고리
+    category: "culture", //카테고리
     location: "전국", //지역
     address: "", //주소
     summary: [""], //상세페이지 소개 멘트
@@ -47,7 +62,7 @@ const benefitList = [
   {
     id: 2, // 서비스 아이디
     name: "VIPS", //업체 이름
-    category: "음식", //카테고리
+    category: "food", //카테고리
     location: "전국", //지역
     address: "", //주소
     summary: [""], //상세페이지 소개 멘트
@@ -72,8 +87,8 @@ const benefitList = [
   {
     id: 3, // 서비스 아이디
     name: "에버랜드", //업체 이름
-    category: "여행", //카테고리
-    location: "", //지역
+    category: "activity", //카테고리
+    location: "용인", //지역
     address: "", //주소
     summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
@@ -93,8 +108,8 @@ const benefitList = [
   {
     id: 4, // 서비스 아이디
     name: "롯데월드", //업체 이름
-    category: "여행", //카테고리
-    location: "", //지역
+    category: "activity", //카테고리
+    location: "서울", //지역
     address: "", //주소
     summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
@@ -109,105 +124,20 @@ const benefitList = [
   },
   {
     id: 5, // 서비스 아이디
-    name: "", //업체 이름
-    category: "", //카테고리
-    location: "", //지역
+    name: "토익", //업체 이름
+    category: "education", //카테고리
+    location: "서울", //지역
     address: "", //주소
     summary: [""], //상세페이지 소개 멘트
     thumbnail: "", //카드 썸네일
-    mainBenefit: "", //혜택 요약
-    benefits: [""], //상세 혜택
-    conditions: [""], //혜택 조건
-    otherOpts: [""], //기타 주의사항
+    mainBenefit: "50% 할인", //혜택 요약
+    benefits: ["1인당 1일권 3만원", "야간권 2만원 대(24,500원)"], //상세 혜택
+    conditions: ["휴가증/외박증, 신분증 제시"], //혜택 조건
+    otherOpts: ["기타우대 및 카드 할인과 중복적용 안됨"], //기타 주의사항
     dtlImgs: [""], //상세페이지 이미지
     dtlLink: "", //혜택 상세 링크 (이메일 포함)
     contactNb: "", //연락처
-    period: "", //행사기간
-  },
-  {
-    id: 6, // 서비스 아이디
-    name: "", //업체 이름
-    category: "", //카테고리
-    location: "", //지역
-    address: "", //주소
-    summary: [""], //상세페이지 소개 멘트
-    thumbnail: "", //카드 썸네일
-    mainBenefit: "", //혜택 요약
-    benefits: [""], //상세 혜택
-    conditions: [""], //혜택 조건
-    otherOpts: [""], //기타 주의사항
-    dtlImgs: [""], //상세페이지 이미지
-    dtlLink: "", //혜택 상세 링크 (이메일 포함)
-    contactNb: "", //연락처
-    period: "", //행사기간
-  },
-  {
-    id: 7, // 서비스 아이디
-    name: "", //업체 이름
-    category: "", //카테고리
-    location: "", //지역
-    address: "", //주소
-    summary: [""], //상세페이지 소개 멘트
-    thumbnail: "", //카드 썸네일
-    mainBenefit: "", //혜택 요약
-    benefits: [""], //상세 혜택
-    conditions: [""], //혜택 조건
-    otherOpts: [""], //기타 주의사항
-    dtlImgs: [""], //상세페이지 이미지
-    dtlLink: "", //혜택 상세 링크 (이메일 포함)
-    contactNb: "", //연락처
-    period: "", //행사기간
-  },
-  {
-    id: 8, // 서비스 아이디
-    name: "", //업체 이름
-    category: "", //카테고리
-    location: "", //지역
-    address: "", //주소
-    summary: [""], //상세페이지 소개 멘트
-    thumbnail: "", //카드 썸네일
-    mainBenefit: "", //혜택 요약
-    benefits: [""], //상세 혜택
-    conditions: [""], //혜택 조건
-    otherOpts: [""], //기타 주의사항
-    dtlImgs: [""], //상세페이지 이미지
-    dtlLink: "", //혜택 상세 링크 (이메일 포함)
-    contactNb: "", //연락처
-    period: "", //행사기간
-  },
-  {
-    id: 9, // 서비스 아이디
-    name: "", //업체 이름
-    category: "", //카테고리
-    location: "", //지역
-    address: "", //주소
-    summary: [""], //상세페이지 소개 멘트
-    thumbnail: "", //카드 썸네일
-    mainBenefit: "", //혜택 요약
-    benefits: [""], //상세 혜택
-    conditions: [""], //혜택 조건
-    otherOpts: [""], //기타 주의사항
-    dtlImgs: [""], //상세페이지 이미지
-    dtlLink: "", //혜택 상세 링크 (이메일 포함)
-    contactNb: "", //연락처
-    period: "", //행사기간
-  },
-  {
-    id: 10,
-    name: "",
-    category: "",
-    location: "",
-    address: "",
-    summary: [""],
-    thumbnail: "",
-    mainBenefit: "",
-    benefits: [""],
-    conditions: [""],
-    otherOpts: [""],
-    dtlImgs: [""],
-    dtlLink: "",
-    contactNb: "",
-    period: "",
+    period: "2021-12-31", //행사기간
   },
 ];
 export const getBenefitList = () => benefitList;
@@ -220,6 +150,13 @@ export const getById = (id) => {
 export const getByCategory = (category) => {
   const filteredBenefits = benefitList.filter(
     (benefit) => benefit.category === category
+  );
+  return filteredBenefits;
+};
+
+export const getByCategoryLocation = (category, location) => {
+  const filteredBenefits = getByCategory(category).filter(
+    (benefit) => benefit.location === location
   );
   return filteredBenefits;
 };
